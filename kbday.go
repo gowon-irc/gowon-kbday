@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"log"
 	"strings"
 	"time"
 
@@ -23,7 +24,9 @@ func colourList(in []string) (out []string) {
 
 func kbday() (string, error) {
 	t := time.Now()
-	tf := t.Format("January_02")
+	tf := t.Format("January_2")
+
+	log.Println(fmt.Sprintf("Fetching birthday info for %s", tf))
 
 	url := fmt.Sprintf("https://kpop.fandom.com/wiki/Template:%s", tf)
 
