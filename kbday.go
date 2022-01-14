@@ -24,7 +24,7 @@ func colourList(in []string) (out []string) {
 
 func kbday() (string, error) {
 	t := time.Now()
-	tf := t.Format("January_2")
+	tf := fmt.Sprintf("%s_%d", t.Format("January"), t.Day())
 
 	log.Println(fmt.Sprintf("Fetching birthday info for %s", tf))
 
