@@ -5,7 +5,7 @@ go 1.17
 require (
 	github.com/anaskhan96/soup v1.2.4
 	github.com/eclipse/paho.mqtt.golang v1.3.5
-	github.com/gowon-irc/go-gowon v0.0.0-20211113200040-cb1a970bd247
+	github.com/gowon-irc/go-gowon v0.0.0-20220719115350-ec869e1addf7
 	github.com/jessevdk/go-flags v1.5.0
 )
 
